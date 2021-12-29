@@ -11,9 +11,12 @@
     </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content>
-    <mat-toolbar color="primary" >
-      <span class="spacer"></span>
-      Movies App
+    <mat-toolbar id="main_heading" color="primary" >
+      <mat-toolbar-row>
+        <span class="spacer"></span>
+        Movies App
+      </mat-toolbar-row>
+      
     </mat-toolbar>
     <div *ngIf="selectedMovie > -1 then displayMovie; else noMovie" >
     </div>

@@ -9,11 +9,11 @@ import { Mytoast } from "./mytoast";
                 <form class="commentForm">
                     <mat-form-field class="username-field" appearance="fill">
                         <mat-label>Username</mat-label>
-                        <input name="username" type="text" [(ngModel)]="username" matInput placeholder="Ex. Jerry" required>
+                        <input name="username" type="text" [(ngModel)]="username" matInput placeholder="Ex. Jerry" >
                     </mat-form-field>
                     <mat-form-field class="comment-field" appearance="fill">
                         <mat-label>Your Comment</mat-label>
-                        <input name="text" type="text" [(ngModel)]="text" matInput placeholder="Ex. Great Movie!" required ngModel>
+                        <input name="text" type="text" [(ngModel)]="text" matInput placeholder="Ex. Great Movie!"  ngModel>
                     </mat-form-field>
                     <p>
                         <button mat-raised-button color="primary" (click)="submitComment()">Submit</button>
@@ -60,6 +60,9 @@ export class commentForm  {
                     this.response = response
                     this.refreshCommentsEvent.emit(true)
                     this.toast.makeToast(this.response.message);
+                    //reset form
+                    this.username = "";
+                    this.text = "";
                 }
             })
         }

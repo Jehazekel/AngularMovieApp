@@ -16,8 +16,9 @@ mat-drawer-content{
     flex-direction: column;
 }
 
-#nav_header{
-   padding: 10px;
+#nav_header, #main_heading{
+   padding: 5px;
+   font-size: 2rem;
 }
 
 .spacer{
