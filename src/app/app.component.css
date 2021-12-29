@@ -1,0 +1,37 @@
+mat-sidenav-container, mat-drawer-container{
+    height: 100%;
+    width: 100vw;
+    
+}
+
+mat-sidenav, mat-sidenav-content{
+  height: 100vw;
+}
+
+
+mat-drawer-content{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#nav_header{
+   padding: 10px;
+}
+
+.spacer{
+    flex: 0.5 0.5 auto
+}
+
+#nav_listing{
+    padding: 0;
+    list-style: none;
+    
+}
+
+
+
+movie-detail{
+    padding: 15px;
+}
